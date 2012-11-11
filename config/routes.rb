@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  get "rato/dados"
+
+  get "pages/home"
+
+  get "pages/contact"
+
   get "page/home"
 
   get "page/contact"
