@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe PageController do
-
+  render_views
+  
   describe "GET 'home'" do
     it "returns http success" do
       get 'home'
@@ -9,8 +10,8 @@ describe PageController do
     end
     
     it "should have the right title" do
-    get 'home'
-    response.should have_selector("title" , :content => "Ruby on rails tutorial Sample App | Home");
+      get 'home'
+      response.should have_selector("title" , :content => "Ruby on rails tutorial Sample App | Home");
     end
     
   end
