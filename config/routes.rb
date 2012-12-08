@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "novo/dados"
+
   get "rato/dados"
 
   get "pages/home"
